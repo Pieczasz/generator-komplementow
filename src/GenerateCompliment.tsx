@@ -21,7 +21,9 @@ function GenerateCompliment() {
 
 	return (
 		<main>
-			<button onClick={generateRandomCompliment}>Generate compliment</button>
+			<button onClick={generateRandomCompliment}>
+				Compliment for today is ...
+			</button>
 			{randomCompliment && <p>{randomCompliment}</p>}
 		</main>
 	);
