@@ -3,6 +3,7 @@ import Compliments from './Compliments';
 
 function GenerateCompliment() {
 	const [randomCompliment, setRandomCompliment] = useState('');
+	const [showButton, setShowButton] = useState(true);
 
 	const generateRandomCompliment = () => {
 		const today = new Date().toLocaleDateString();
@@ -17,14 +18,25 @@ function GenerateCompliment() {
 			localStorage.setItem(today, newCompliment);
 			setRandomCompliment(newCompliment);
 		}
+
+		setShowButton(false);
 	};
 
 	return (
-		<main>
-			<button onClick={generateRandomCompliment}>
-				Compliment for today is ...
-			</button>
-			{randomCompliment && <p>{randomCompliment}</p>}
+		<main className="flex justify-center items-center h-screen">
+			{showButton && (
+				<button
+					onClick={generateRandomCompliment}
+					className="bg-red-500 text-white font-bold py-2 px-4 rounded-full shadow-md hover:shadow-lg transform transition duration-300 ease-in-out hover:scale-105"
+				>
+					Your compliment for today is..
+				</button>
+			)}
+			{randomCompliment && (
+				<p className="text-3xl font-bold text-white bg-red-500 py-3 px-4 rounded-full shadow-md">
+					{randomCompliment}
+				</p>
+			)}
 		</main>
 	);
 }
