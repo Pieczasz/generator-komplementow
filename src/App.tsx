@@ -1,13 +1,13 @@
 import React from 'react';
 import './App.css';
 import Header from './Header';
-import GenerateComplement from './GenerateComplement';
+import GenerateCompliment from './GenerateCompliment';
 
 function App() {
 	return (
 		<div className="container">
 			<Header />
-			<GenerateComplement />
+			<GenerateCompliment />
 		</div>
 	);
 }
