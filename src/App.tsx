@@ -3,7 +3,7 @@ import GenerateCompliment from './GenerateCompliment';
 
 function App() {
 	return (
-		<div className="h-screen flex flex-col justify-center items-center from-purple-700 via-yellow-700 to-pink-900 bg-gradient-to-br">
+		<div className="h-screen flex flex-col justify-center items-center bg-image bg-[url('./assets/stacked-waves-haikei.svg')]">
 			<GenerateCompliment />
 		</div>
 	);
