@@ -35,6 +35,7 @@ function GenerateCompliment() {
 			{randomCompliment && (
 				<p className="text-3xl font-bold text-white bg-red-500 py-3 px-4 rounded-full shadow-md w-100 h-15">
 					{randomCompliment}
+					{/* {TODO: CSS fireworks + present animation} */}
 				</p>
 			)}
 		</main>
