@@ -27,7 +27,7 @@ function GenerateCompliment() {
 			{showButton && (
 				<button
 					onClick={generateRandomCompliment}
-					className="bg-red-500 text-white font-bold py-2 px-4 rounded-full shadow-md hover:shadow-lg transform transition duration-300 ease-in-out hover:scale-105"
+					className="bg-red-500 text-white text-2xl font-bold py-3 px-4 rounded-full shadow-md hover:shadow-lg transform transition duration-400 ease-in-out hover:scale-110"
 				>
 					Your compliment for today is..
 				</button>
